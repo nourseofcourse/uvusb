@@ -1,0 +1,50 @@
+<section class="section  {{ section.settings.class }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="section__heading  text-center">
+        {% if section.settings.section_title %}
+          <h2 class="section__title">{{ section.settings.section_title }}</h2>
+        {% endif %}
+        {% if section.settings.supporting_text %}
+          {{ section.settings.supporting_text }}
+        {% endif %}
+        </div>
+      </div>
+      <div class="col-sm-6"></div>
+      <div class="col-sm-6"></div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "List w/ Image",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Width display"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Heading",
+      "default": "Insert a heading"
+    },
+    {
+      "type": "richtext",
+      "id": "supporting_text",
+      "label": "Supporting Text",
+      "default": "<p>Describe a product, share announcements, or welcome customers to your store.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "List w/ Image",
+      "category": "UV - Content"
+    }
+  ]
+}
+{% endschema %}
