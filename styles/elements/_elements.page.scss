@@ -14,9 +14,23 @@
  * 3. Ensure the page always fills at least the entire height of the viewport.
  */
 
- html {
-  font-size: ($global-font-size / 16px) * 1em; /* [1] */
-  line-height: $global-line-height / $global-font-size; /* [1] */
-  overflow-y: scroll; /* [2] */
-  min-height: 100%; /* [3] */
+@at-root {
+   @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
+}
+
+html {
+   font-family: "Inter", sans-serif;
+   color: #3e3d46;
+   font-size: ($global-font-size / 16px) * 1em; /* [1] */
+   line-height: $global-line-height / $global-font-size; /* [1] */
+   overflow-y: scroll; /* [2] */
+   min-height: 100%; /* [3] */
+   box-sizing: border-box;
+   -ms-overflow-style: scrollbar;
+}
+ 
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
 }

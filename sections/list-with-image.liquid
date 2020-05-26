@@ -1,7 +1,7 @@
 <section class="section  {{ section.settings.class }}">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-6 offset-md-3">
         <div class="section__heading  text-center">
         {% if section.settings.section_title %}
           <h2 class="section__title">{{ section.settings.section_title }}</h2>
@@ -11,8 +11,28 @@
         {% endif %}
         </div>
       </div>
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6"></div>
+    </div>
+  </div>
+  <div class="bg-secondary border-top-tertiary  border-bottom-tertiary  bacteria">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 offset-lg-1  col-md-3  offset-md-1">
+          <img class="bacteria__image  lazy" src="{{ section.settings.list_image | img_url: 'master' }}" alt="">
+        </div>
+        <div class="col-lg-7 offset-lg-1 col-md-6">
+          <div class="bacteria__content">
+            <h3>Kills deadly viruses and bacteria</h3>
+            <ul class="bacteria__list" style="list-style-image: url({{ 'lightning-bolt-icon.svg' | file_url }});">
+              <li class="bacteria__list-item"><span>Escherichia coli (E. Coli)</span></li>
+              <li class="bacteria__list-item"><span>Salmonella typhimurium (Salmonella)</span></li>
+              <li class="bacteria__list-item"><span>Staphylococcus aureus (Staph)</span></li>
+              <li class="bacteria__list-item"><span>Methicillin-resistant Staphylococcus aureus (MRSA)</span></li>
+              <li class="bacteria__list-item"><span>Influenza A H1N1 (Flu)</span></li>
+              <li class="bacteria__list-item"><span>Rhinovirus (common cold)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -38,6 +58,11 @@
       "id": "supporting_text",
       "label": "Supporting Text",
       "default": "<p>Describe a product, share announcements, or welcome customers to your store.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "list_image",
+      "label": "Image"
     }
   ],
   "presets": [

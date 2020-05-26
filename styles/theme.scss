@@ -3,6 +3,7 @@
 @import "settings/settings.bootstrap";
 @import "settings/settings.variables";
 @import "settings/settings.typography";
+@import "settings/settings.colors";
 
 // Mixins
 @import "tools/tools.breakpoints";
@@ -29,6 +30,12 @@
 @import "objects/objects.grid";
 
 // Components
+@import "components/components.site-head";
+@import "components/components.site-foot";
+@import "components/components.page-head";
+@import "components/components.section";
+@import "components/components.button";
+@import "components/components.bacteria";
 
 // Utilities
 @import "utilities/all";

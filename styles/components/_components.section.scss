@@ -1,0 +1,23 @@
+.section {
+  padding: {
+    top: 90px;
+    bottom: 90px;
+  }
+
+  &--protect {
+    background-position: center left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__heading {
+    margin: {
+      bottom: 75px;
+    }
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

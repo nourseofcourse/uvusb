@@ -1,0 +1,58 @@
+<section class="section  {{ section.settings.class }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="section__heading  text-center">
+        {% if section.settings.section_title %}
+          <h2 class="section__title">{{ section.settings.section_title }}</h2>
+        {% endif %}
+        {% if section.settings.supporting_text %}
+          {{ section.settings.supporting_text }}
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12  text-center">
+        <blockquote class="quote">
+          <p class="quote__content">“UV light has been shown to destroy other coronaviruses, so it will probably work on the novel coronavirus. But UV light damages human skin, so it should only be used on objects or surfaces."</p>
+          <footer class="quote__footer">— The National Academies of Sciences Engineering Medicine</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  {% schema %}
+  {
+    "name": "Testimonials",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Width display"
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Heading",
+        "default": "Insert a heading"
+      },
+      {
+        "type": "richtext",
+        "id": "supporting_text",
+        "label": "Supporting Text",
+        "default": "<p>Describe a product, share announcements, or welcome customers to your store.</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Testimonials",
+        "category": "UV - Content"
+      }
+    ]
+  }
+  {% endschema %}

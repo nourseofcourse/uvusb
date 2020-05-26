@@ -1,0 +1,14 @@
+.page-head {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

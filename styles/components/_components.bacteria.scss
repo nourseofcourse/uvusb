@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #BACTERIA
+   ========================================================================== */
+
+/**
+ * 1. Used to align with the list-style image ( lightning-bolt-icon.svg ).
+ */
+ 
+.bacteria {
+  &__image {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__content {
+    padding: {
+      top: 80px;
+      bottom: 80px;
+    }
+  }
+
+  &__list {
+    &-item {
+      line-height: 19px;
+      padding: {
+        top: 5px;
+      }
+
+      span {
+        top: -5px; /* [1] */
+        position: relative;
+      }
+    }
+  }
+}

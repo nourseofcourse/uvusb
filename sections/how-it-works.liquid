@@ -1,0 +1,55 @@
+<section class="section  {{ section.settings.class }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="section__heading  text-center">
+        {% if section.settings.section_title %}
+          <h2 class="section__title">{{ section.settings.section_title }}</h2>
+        {% endif %}
+        {% if section.settings.supporting_text %}
+          {{ section.settings.supporting_text }}
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">11</div>
+      <div class="col-md-4">22</div>
+      <div class="col-md-4">33</div>
+    </div>
+  </div>
+</section>
+  
+  {% schema %}
+  {
+    "name": "How it Works",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Width display"
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Heading",
+        "default": "Insert a heading"
+      },
+      {
+        "type": "richtext",
+        "id": "supporting_text",
+        "label": "Supporting Text",
+        "default": "<p>Describe a product, share announcements, or welcome customers to your store.</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "How it Works",
+        "category": "UV - Content"
+      }
+    ]
+  }
+  {% endschema %}
