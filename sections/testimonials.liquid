@@ -1,10 +1,10 @@
-<section class="section  {{ section.settings.class }}">
+<section class="section  bg-secondary  {{ section.settings.class }}">
   <div class="container">
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <div class="section__heading  text-center">
         {% if section.settings.section_title %}
-          <h2 class="section__title">{{ section.settings.section_title }}</h2>
+          <h2 class="section__title  section__title--dec">{{ section.settings.section_title }}</h2>
         {% endif %}
         {% if section.settings.supporting_text %}
           {{ section.settings.supporting_text }}
@@ -16,10 +16,32 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12  text-center">
-        <blockquote class="quote">
-          <p class="quote__content">“UV light has been shown to destroy other coronaviruses, so it will probably work on the novel coronavirus. But UV light damages human skin, so it should only be used on objects or surfaces."</p>
-          <footer class="quote__footer">— The National Academies of Sciences Engineering Medicine</footer>
-        </blockquote>
+        <div class="carousel  js-testimonial-slider">
+          <div class="carousel__slide">
+            <blockquote class="quote">
+              <p class="quote__content">“UVC light been shown to destroy related coronaviruses, including the one that causes the disease MERS."</p>
+              <footer class="quote__footer">— The National Academies of Sciences Engineering Medicine</footer>
+            </blockquote>
+          </div>
+          <div class="carousel__slide">
+            <blockquote class="quote">
+              <p class="quote__content">“UV light has been shown to destroy other coronaviruses, so it will probably work on the novel coronavirus. But UV light damages human skin, so it should only be used on objects or surfaces."</p>
+              <footer class="quote__footer">— The National Academies of Sciences Engineering Medicine</footer>
+            </blockquote>
+          </div>
+          <div class="carousel__slide">
+            <blockquote class="quote">
+              <p class="quote__content">“It’s disrupting the very heart of bacteria or viruses.”</p>
+              <footer class="quote__footer">— Andrea Martin Armani, the Ray Irani Chair in Engineering and Materials Science and Professor of Chemical Engineering and Materials Science at the USC Viterbi School of Engineering, an expert on light and biology, who has developed several new biosensor technologies with lasers and UV light.</footer>
+            </blockquote>
+          </div>
+          <div class="carousel__slide">
+            <blockquote class="quote">
+              <p class="quote__content">“This light has a range of effectiveness, which interferes and destroys the nucleic acids of bacteria and other microbes.”</p>
+              <footer class="quote__footer">— Philip Tierno, PhD, a clinical professor in the department of pathology at New York University Langone Medical Center.</footer>
+            </blockquote>
+          </div>
+        </div>
       </div>
     </div>
   </div>

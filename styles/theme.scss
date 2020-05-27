@@ -29,6 +29,9 @@
 // Objects
 @import "objects/objects.grid";
 
+// Plugins
+@import "plugins/plugins.slick";
+
 // Components
 @import "components/components.site-head";
 @import "components/components.site-foot";
@@ -36,6 +39,9 @@
 @import "components/components.section";
 @import "components/components.button";
 @import "components/components.bacteria";
+@import "components/components.step";
+@import "components/components.quote";
+@import "components/components.cart";
 
 // Utilities
 @import "utilities/all";

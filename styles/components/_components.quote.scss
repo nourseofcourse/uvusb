@@ -1,9 +1,13 @@
 .quote {
+  max-width: 650px;
+  margin: 0 auto 10px;
   &__content {
 
   }
 
   &__footer {
-    
+    font-size: 14px;
+    color: #281e5f;
+    font-style: italic;
   }
 }

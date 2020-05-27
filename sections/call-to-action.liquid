@@ -1,0 +1,54 @@
+<section class="section  section--cta  bg-secondary  {{ section.settings.class }}">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <div class="section__heading  mb-0 mb-sm-20">
+        {% if section.settings.section_title %}
+          <h2 class="section__title  mb-0 text-center text-md-left">{{ section.settings.section_title }}</h2>
+        {% endif %}
+        {% if section.settings.supporting_text %}
+          {{ section.settings.supporting_text }}
+        {% endif %}
+        </div>
+      </div>
+      <div class="col-md-4  text-center">
+        <form method="post" action="/cart/add"> 
+          <input type="hidden" name="id" value="32563771867213" /> 
+          <button type="submit" class="btn  btn--primary  bgn--large">BUY NOW</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  {% schema %}
+  {
+    "name": "Call to Action",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Width display"
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Heading",
+        "default": "Insert a heading"
+      },
+      {
+        "type": "richtext",
+        "id": "supporting_text",
+        "label": "Supporting Text",
+        "default": "<p>Describe a product, share announcements, or welcome customers to your store.</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Call to Action",
+        "category": "UV - Content"
+      }
+    ]
+  }
+  {% endschema %}

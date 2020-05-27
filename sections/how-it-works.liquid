@@ -4,7 +4,7 @@
       <div class="col-md-6 offset-md-3">
         <div class="section__heading  text-center">
         {% if section.settings.section_title %}
-          <h2 class="section__title">{{ section.settings.section_title }}</h2>
+          <h2 class="section__title  section__title--dec">{{ section.settings.section_title }}</h2>
         {% endif %}
         {% if section.settings.supporting_text %}
           {{ section.settings.supporting_text }}
@@ -15,9 +15,39 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">11</div>
-      <div class="col-md-4">22</div>
-      <div class="col-md-4">33</div>
+      <div class="col-md-4">
+        <div class="step">
+          <div class="step__image">
+            <div class="step__num">
+              1
+            </div>
+            <img src="{{ 'step-placeholder.jpg' | file_url }}" data-src="{{ 'uvusb-doorhandle.gif' | file_url }}" alt="" class="circle  lazy">
+          </div>
+          <p class="step__content">Plug the device into your phone port to power it on.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step">
+          <div class="step__image">
+            <div class="step__num">
+              2
+            </div>
+            <img src="{{ 'step-placeholder.jpg' | file_url }}" data-src="{{ 'uvusb-keyboard.gif' | file_url }}" alt="" class="circle  lazy">
+          </div>
+          <p class="step__content">Expose the UV light onto the surface you want to clean.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="step">
+          <div class="step__image">
+            <div class="step__num">
+              3
+            </div>
+            <img src="{{ 'step-placeholder.jpg' | file_url }}" data-src="{{ 'uv-glass-square.gif' | file_url }}" alt="" class="circle  lazy">
+          </div>
+          <p class="step__content">Hold the device 3-6 inches away from the dirty surface for 10 seconds or more. </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

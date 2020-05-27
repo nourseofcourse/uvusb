@@ -1,0 +1,38 @@
+.step {
+  text-align: center;
+  &__image {
+    position: relative;
+    max-width: 250px;
+    margin: 0 auto;
+    img {
+      border: 7px solid $tertiary;
+    }
+    margin: {
+      bottom: 20px;
+    }
+  }
+
+  &__content {
+    @media(max-width: 767px) {
+      max-width: 300px;
+      text-align: center;
+      margin: 0 auto 24px;
+    }
+  }
+
+  &__num {
+    background: $primary;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    border: 2px solid #ffff;
+  }
+}
