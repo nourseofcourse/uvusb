@@ -9,6 +9,10 @@ $color-border:  $tertiary;
 $section-spacing: 55px;
 $section-spacing-small: 35px;
 /*================ Cart page ================*/
+
+#shopify-section-cart-template {
+  padding: 100px 0;
+}
 .cart {
   color: #3e3d46;
 
@@ -76,6 +80,7 @@ $section-spacing-small: 35px;
 
 .cart__product-information {
   display: flex;
+  align-items: center;
 }
 
 .cart__image-wrapper {
@@ -198,7 +203,7 @@ $section-spacing-small: 35px;
   td {
     vertical-align: top;
 
-    @media(min-width: 9920px) {
+    @media(min-width: 992px) {
       vertical-align: middle;
     }
   }
@@ -213,7 +218,7 @@ $section-spacing-small: 35px;
 }
 
 .cart-subtotal__title {
-  font-size: em($font-size-base + 2px);
+  font-size: 18px;
 }
 
 .cart-subtotal__price {

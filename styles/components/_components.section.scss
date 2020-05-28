@@ -16,6 +16,14 @@
     background-size: contain;
     background-repeat: no-repeat;
 
+    @media(max-width: 992px) {
+      background-position: -140px;
+    }
+
+    @media(max-width: 768px) {
+      background: none !important;
+    }
+
     p {
       @media(max-width: 992px) {
         font-size: 14px;
@@ -36,6 +44,14 @@
 
   &__title {
     &--dec {
+
+      .text-center & {
+        &:after {
+          left: 50%;
+          transform: translateX(-50%);
+          margin: 0 auto;
+        }
+      }
       position: relative;
       &:after {
         content: '';
@@ -45,12 +61,11 @@
         height: 20px;
         display: block;
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 0 auto;
+        left: 0;
         top: calc(100% + 5px);
       }
     }
+
   }
 
   &__title--dec {

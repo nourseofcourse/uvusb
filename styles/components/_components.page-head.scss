@@ -1,7 +1,11 @@
 .page-head {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
+
+  @media(max-width: 992px) {
+    height: auto;
+  }
 
   &__content {
     display: flex;
@@ -10,5 +14,16 @@
     background-position: right center;
     background-repeat: no-repeat;
     background-size: contain;
+    
+
+    @media(max-width: 992px) {
+      background-position: bottom center;
+      padding: {
+        top: 125px;
+        bottom: 325px;
+      }
+      background-size: auto;
+      background-image: url(https://cdn.shopify.com/s/files/1/0281/7284/5133/files/uvusb-header-mobile2.jpg?v=1590596389) !important;
+    }
   }
 }

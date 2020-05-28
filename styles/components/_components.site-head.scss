@@ -3,6 +3,14 @@
   background-color: #fff;
   padding: 10px 0;
 
+  &--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
   &__logo {
     display: block;
     margin: 15px 0;
@@ -83,4 +91,15 @@ border: 0;
 font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
 font-size: calc(11em / 16);
 line-height: 1;
+}
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear, background-color .3s ease-in;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
 }
